@@ -201,7 +201,10 @@ const config = {
             const urlToMain =
               'https://github.com/callstack/react-native-paper/tree/main';
 
-            if (params.docPath.includes('guides')) {
+            if (
+              params.docPath.includes('guides') ||
+              params.docPath.includes('analysis')
+            ) {
               return `${urlToMain}/docs/docs/${params.docPath}`;
             }
 
